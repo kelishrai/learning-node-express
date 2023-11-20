@@ -51,4 +51,5 @@ git remote add origin repo_link
 git branch -M main
 git push -u origin main
 git clone repo_link
+git log
 npm install //install all packages listed in package.json.dependencies
