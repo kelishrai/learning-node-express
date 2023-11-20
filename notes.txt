@@ -42,3 +42,13 @@ npm i bootstrap
 const _ = require('lodash');
 const myArr = [1,[2,[3,[4,[5]]]]];
 const myNewArr = _.flattenDeep(myArr);
+.gitignore
+git init
+git add .
+git status
+git commit -m "first commit"
+git remote add origin repo_link
+git branch -M main
+git push -u origin main
+git clone repo_link
+npm install //install all packages listed in package.json.dependencies
