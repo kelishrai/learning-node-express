@@ -1,16 +1,18 @@
 const { readFile,writeFile } = require('fs');
+const util = require('util');
+const uRF = util.promisify(readFile);
+const wRF = util.promisify(writeFile);
 
-readFile('./files/text/read.txt', 'utf-8', (err,result) => {
-    if(err){
-        console.log(err);
-        return;
+const start = async() => {
+    try {
+        const value1 = await uRF('forRead.txt', 'utf-8');
+        const value2 = await uRF('for2ndRead.txt', 'utf-8');
+        await wRF('written-file.txt',`${value1} \t ${value2}`);
+        const wvalue = await uRF('written-file.txt', 'utf-8');
+        console.log(value1 + "\n\t" + value2 + "\n\t" + wvalue);
+    } catch (error) {
+        console.log(error);
     }
-    const readenString = result;
-    writeFile('./files/text/write.txt', readenString, (err, result)=>{
-        if(err){
-            console.log(err);
-            return;
-        }
-        console.log(result);
-    })
-});
+}
+
+start()
