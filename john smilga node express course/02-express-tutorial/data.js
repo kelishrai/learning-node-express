@@ -31,6 +31,22 @@ const products = [
     price: 9.99,
     desc: `I'm baby direct trade farm-to-table hell of, YOLO readymade raw denim venmo whatever organic gluten-free kitsch schlitz irony af flexitarian.`,
   },
+  {
+    id: 5,
+    name: 'entertainment left',
+    image:
+      'https://dl.airtable.com/.attachments/da5e17fd71f50578d525dd5f596e407e/d5e88ac8/product-2.jpg',
+    price: 25.98,
+    desc: `I'm baby direct trade farm-to-table hell of, YOLO readymade raw denim venmo whatever organic gluten-free kitsch schlitz irony af flexitarian.`,
+  },
+  {
+    id: 6,
+    name: 'entertainment right',
+    image:
+      'https://dl.airtable.com/.attachments/da5e17fd71f50578d525dd5f596e407e/d5e88ac8/product-2.jpg',
+    price: 33.98,
+    desc: `I'm baby direct trade farm-to-table hell of, YOLO readymade raw denim venmo whatever organic gluten-free kitsch schlitz irony af flexitarian.`,
+  }
 ]
 const people = [
   { id: 1, name: 'john' },
